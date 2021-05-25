@@ -4,7 +4,7 @@ import {
     applyMiddleware 
 } from 'redux';
 
-import thunk from 'react-redux';
+import thunk from 'redux-thunk';
 
 import reducersDigimons from './modules/digimons/reducers';
 
