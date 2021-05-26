@@ -10,6 +10,7 @@ export const Input = styled.input`
     border-top-left-radius: 1rem;
     border: none;
     font-size: 1rem;
+    outline: none;
 
     :hover {
         background-color: rgba(219, 219, 219, 0.9);
@@ -26,6 +27,7 @@ export const Button = styled.button`
     border-top-right-radius: 1rem;
     border: none;
     font-size: 1rem;
+    outline: none;
 
     :hover {
         background-color: rgba(38, 38, 46, 0.6);

@@ -7,8 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Search/>        
-        <Digimons/>
       </header>
+      <main className='App-main'> 
+        <Digimons/>
+      </main>
     </div>
   );
 }
