@@ -8,9 +8,9 @@ function App() {
       <header className="App-header">
         <Search/>        
       </header>
-      <main className='App-main'> 
+      <section className='search'> 
         <Digimons/>
-      </main>
+      </section>
     </div>
   );
 }

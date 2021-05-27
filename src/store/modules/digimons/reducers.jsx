@@ -5,7 +5,7 @@ const reducersDigimons = (state = [], action) => {
         
         case ADD_DIGIMONS:
             
-            const { digimon } = action
+            const { digimon } = action;
             return digimon;
             
         default:

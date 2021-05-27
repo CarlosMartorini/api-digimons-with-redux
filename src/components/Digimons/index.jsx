@@ -1,22 +1,27 @@
-import { Card, List } from './styles';
+import { Card, List } from '../Card';
 import { useSelector } from 'react-redux';
 
 const Digimons = () => {
 
     const { digimon } = useSelector((state) => state);
 
-    console.log(digimon)
-
     return (
         <List>
             {
-                digimon.map((digimon, index) => (
-                    <Card key={index}>
-                        {digimon.name}
-                        <img src={digimon.img} alt={digimon.name}/>
-                        <span>{digimon.level}</span>
-                    </Card>
-                ))
+                digimon.errormsg !== true
+                ?
+                    digimon.map((digimon, index) => (
+                        <Card key={index}>
+                            {digimon.name}
+                            <img src={digimon.img} alt={digimon.name}/>
+                            <span>{digimon.level}</span>
+                        </Card>
+                    ))
+                :
+                    digimon.map((digimon, index) => (
+                        <h4 key={index}>{digimon.errormsg}</h4>
+                    ))
+                
             }
         </List>
     )
