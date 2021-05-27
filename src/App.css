@@ -24,7 +24,15 @@
   color: #ff7373;
 }
 
-.App-main {
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
