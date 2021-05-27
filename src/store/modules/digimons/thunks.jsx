@@ -6,5 +6,5 @@ export const addDigimonsThunk = (digimon, setError) => (dispatch) => {
     .then((response) => 
         dispatch(addDigimon((response.data)))
     )
-    .catch(e => setError)
+    .catch(e => {setError(true)})
 }
