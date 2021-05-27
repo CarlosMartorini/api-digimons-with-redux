@@ -11,7 +11,7 @@ const Search = () => {
 
     const handleSearch = () => {
         setError(false);
-        dispatch(addDigimonsThunk(input));
+        dispatch(addDigimonsThunk(input, setError));
         setInput('');
     }
 
@@ -25,16 +25,10 @@ const Search = () => {
                     placeholder='Search for the digimon'
                 ></Input>
                 <Button onClick={() => handleSearch()}>Search</Button>
-                {
-                    error
-                    ? (  
-                        <span>Digimon not found</span>
-                    ) : (
-                        ''
-                    )
-                    
-                }
             </div>
+            {
+                error && <span>Digimon not found!!</span>                    
+            }
         </div>
     )
 }
